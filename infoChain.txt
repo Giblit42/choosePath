@@ -1,0 +1,28 @@
+package infoChain;
+import java.util.Scanner;
+
+public class infoChain {
+
+	private static Scanner myObj;
+
+	public static void main(String[] args) {
+		myObj = new Scanner(System.in);
+		String response = "";
+		System.out.println("Hello please enter in your name");
+		String userName = myObj.nextLine(); //Read user input
+		System.out.println("Username is: " + userName);
+		
+		//start the story 
+		System.out.println("Hello " + userName + " would you like to go on an adventure?");
+		response = myObj.nextLine();
+		System.out.println("You chose " + response);
+		if(response == "No") {
+			System.out.println("Thank you for playing " + userName);
+		}
+		else {
+			System.out.println("Then let us begin " + userName);
+		}
+
+	}
+
+}
